@@ -1,6 +1,99 @@
+
 /**
- * The current input value as a string.
+ *  * The current input value as a string.
  */
+
+let inputString: string = '';
+let result: number = 0;
+let value: string = "";
+let inputNumber: string = "";
+let calcTotal: string = "";
+let sumString: string = "";
+
+const output = document.querySelector('#display') as HTMLDivElement;
+
+output.textContent = "0";
+
+
+
+// Clear display
+
+const clearDisplayBut = document.querySelector('#clearDisplay') as HTMLButtonElement;
+
+clearDisplayBut.addEventListener('click', clearDisplay);
+
+function clearDisplay() {
+    console.log('clearDisplay');
+}
+
+// Number input buttons
+
+function inputNumberFunc(input: string, calcTotal: string = "") {
+
+    console.log(input);
+    inputNumber += Number(input)
+    console.log("The number is: ", inputNumber);
+    output.textContent = inputNumber;
+
+    sumString += inputNumber;
+    inputNumber = '';
+    console.log("SumString New is: ", sumString);
+
+}
+
+(window as any).inputNumber = function (input: string) {
+    inputNumberFunc(input);
+
+
+}
+
+
+// Operation input buttons
+
+const divideBut = document.querySelector('#divide') as HTMLButtonElement;
+/* divideBut.addEventListener('click', () => setOperation('/')); */
+divideBut.addEventListener('click', () => setOperation('/'));
+
+const timesBut = document.querySelector('#times') as HTMLButtonElement;
+timesBut.addEventListener('click', () => setOperation('*'));
+
+const minusBut = document.querySelector('#minus') as HTMLButtonElement;
+minusBut.addEventListener('click', () => setOperation('-'));
+
+const plusBut = document.querySelector('#plus') as HTMLButtonElement;
+plusBut.addEventListener('click', () => setOperation('+'));
+
+function setOperation(op: string) {
+    console.log(op);
+    console.log(inputNumber);
+    sumString += op;
+    console.log("SumString New is: ", sumString);
+    inputNumber = '';
+
+
+}
+
+function clearCalc() {
+    inputNumber = '';
+    inputString = '';
+    output.textContent = "0";
+}
+
+function calculateResult() {
+    eval(calcTotal);
+    console.log("The result is: ", calcTotal);
+    return calcTotal;
+
+
+
+
+    const calulateA = document.querySelector('#calc') as HTMLButtonElement;
+    calulateA.addEventListener('click', calculateResult);
+}
+
+
+
+
 
 /**
  * The previous input value as a string.

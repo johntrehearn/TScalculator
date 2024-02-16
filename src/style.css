@@ -16,10 +16,18 @@ body {
   background: #fff;
 }
 
-#calculator input {
-  width: calc(4 * 50px);
+#display {
+  color: red;
+  background-color: rgb(208, 211, 210);
+  height: 30px;
+  font-size: 24px;
+  text-align: right;
   padding: 10px;
   margin-bottom: 10px;
+  width: calc(4 * 51px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: #000 1px solid;
 }
 
 #calculator button {

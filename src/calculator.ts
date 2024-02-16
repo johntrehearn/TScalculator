@@ -4,7 +4,6 @@ let inputString: string = '';
 let result: number = 0;
 let value: string = "";
 let inputNumber: string = "";
-let calcTotal: string = "";
 let sumString: string = "";
 
 const output = document.querySelector('#display') as HTMLDivElement;
@@ -27,7 +26,7 @@ function clearDisplay() {
 
 // Number input buttons
 
-function inputNumberFunc(input: string, calcTotal: string = "") {
+function inputNumberFunc(input: string) {
     inputNumber += Number(input)
     sumString += inputNumber;
     output.textContent = sumString;

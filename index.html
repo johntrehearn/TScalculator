@@ -3,30 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+    <title>JT Calculator</title>
     <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Protest+Riot&family=Roboto:ital,wght@1,300&family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>TypeScript Calculator</h1>
+    <h1>JT TypeScript Calculator</h1>
     <div id="calculator">
         <div id='display'></div>
        
-        <button id="clearDisplay">C</button>
-        <button onclick="inputNumber(7)">7</button>
-        <button onclick="inputNumber(8)">8</button>
         <button onclick="inputNumber(9)">9</button>
-        <button id="divide">/</button>
+        <button onclick="inputNumber(8)">8</button>
+        <button onclick="inputNumber(7)">7</button>
+        <button id="clearDisplay">C</button>
         <button onclick="inputNumber(4)">4</button>
         <button onclick="inputNumber(5)">5</button>
         <button onclick="inputNumber(6)">6</button>
-        <button id="times">*</button>
+        <button id="divide">/</button>
         <button onclick="inputNumber(1)">1</button>
         <button onclick="inputNumber(2)">2</button>
         <button onclick="inputNumber(3)">3</button>
-        <button id="minus">-</button>
+        <button id="times">*</button>
         <button onclick="inputNumber(0)">0</button>
-        <button id="calc">=</button>
+        <button id="minus">-</button>
         <button id="plus">+</button>
+        <button id="calc">=</button>
     </div>
 
     <script src="./src/calculator.ts" type="module"></script>

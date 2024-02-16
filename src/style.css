@@ -1,5 +1,4 @@
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -13,12 +12,15 @@ body {
   margin: auto;
   border: 1px solid #000;
   padding: 10px;
-  background: #fff;
+  background: hsl(0, 15%, 11%);
+  box-shadow: 2px 2px #888888;
+
 }
 
 #display {
-  color: red;
-  background-color: rgb(208, 211, 210);
+  color: rgb(17, 8, 8);
+  font-family: "Rubik Pixels", sans-serif;
+  background-color: rgb(60, 119, 99);
   height: 30px;
   font-size: 24px;
   text-align: right;
@@ -35,4 +37,19 @@ body {
   height: 50px;
   font-size: 18px;
   margin: 2px;
+  font-family: "Agbalumo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(62, 62, 157);
+  color: thistle;
+  box-shadow: 1px 1px #888888;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
